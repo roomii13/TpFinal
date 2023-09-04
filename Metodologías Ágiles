@@ -1,0 +1,67 @@
+Metodología Kanban para el Proyecto de Gestión de Turnos Médicos:
+
+
+Tablero Kanban:
+Crea un tablero Kanban en una plataforma en línea, como Trello, o en una pizarra física. Divide el tablero en varias columnas para representar el flujo de trabajo.
+
+
+Columnas del Tablero:
+
+
+Backlog de Tareas: Aquí listamos todas las tareas pendientes y características que deseamos incluir en el sistema de gestión de turnos.
+
+
+Análisis y Diseño: Cuando seleccionamos una tarea para trabajar, la movemos a esta columna para realizar el análisis detallado y diseñar la solución.
+
+
+Desarrollo y Codificación: Una vez que hemos diseñado la solución, movemos la tarea a esta columna para comenzar a codificarla.
+
+
+Pruebas y Revisión: Después de completar la codificación, la tarea se traslada aquí para realizar pruebas exhaustivas y revisiones de calidad.
+
+
+Integración y Despliegue: Cuando una tarea ha pasado las pruebas y revisiones, la movemos a esta columna para integrarla en el sistema y desplegarla para su uso.
+
+
+Hecho: Cuando una tarea está completamente implementada y funcional en el sistema, la movemos a esta columna.
+
+
+Listado de Tareas:
+Desglosamos el proyecto en tareas más pequeñas y manejables:
+
+
+Investigación de requisitos y definición de funciones clave.
+Diseño de la interfaz de usuario y prototipos de pantalla.
+Creación de la base de datos para el registro de turnos y doctores.
+Implementación de la funcionalidad de registro y programación de turnos.
+Diseño de la interfaz de administración para el personal médico.
+Codificación de la interfaz de administración y acceso a datos.
+Integración de notificaciones por correo electrónico para confirmación de citas.
+Pruebas de extremo a extremo para garantizar la funcionalidad completa.
+Documentación del sistema y creación de manuales de usuario.
+
+Flujo de Trabajo:
+
+Las tareas avanzan a través del tablero Kanban de izquierda a derecha, siguiendo un flujo natural:
+
+
+1.Colocamos todas las tareas en la columna "Backlog de Tareas".
+
+2.Al seleccionar una tarea para trabajar, la movemos a "Análisis y Diseño".
+
+3.Luego, pasa a "Desarrollo y Codificación" una vez que se ha diseñado.
+
+4.Después de completar la codificación, se traslada a "Pruebas y Revisión".
+
+5.Cuando ha pasado las pruebas, se mueve a "Integración y Despliegue".
+
+6.Finalmente, cuando está completamente implementada, se coloca en "Hecho".
+
+Seguimiento:
+
+Actualizamos regularmente el tablero Kanban para reflejar el progreso. También utilizamos una columna adicional llamada "Bloqueado" 
+para indicar tareas que han encontrado obstáculos o necesitan más información.
+
+
+Este enfoque Kanban permite una gestión detallada y efectiva de las tareas en el proyecto de gestión de turnos médicos.
+Además, promueve la transparencia y la adaptación continua a medida que avanzamos en el desarrollo del sistema.
