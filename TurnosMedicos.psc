@@ -2,10 +2,11 @@ Algoritmo TurnosMedicos
 	
 	Definir num, num2,num3 Como Entero;
 	
-	// Definir arreglos;
+	
 	Dimension Especialidades[24];
 	Dimension DoctoresDisponibles[24, 2];
 	Dimension Turnos[5, 17];//  5 días, 17 horarios(de 9 am a 17 pm)
+
 	// Inicializar arreglos de especialidades;
 	Especialidades[1] <- "Clínica Médica";
 	Especialidades[2] <- "Cirugía General";
