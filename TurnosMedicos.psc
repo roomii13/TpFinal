@@ -1,11 +1,6 @@
 Algoritmo TurnosMedicos
 	
 	Definir num, num2,num3 Como Entero;
-	// Definir constantes;
-	HORARIO_INICIO<- 9;
-	HORARIO_FIN <-17;
-	MINUTOS_POR_TURNO <-30;
-	DIAS_DE_LA_SEMANA <- 5; // Lunes a Viernes;
 	
 	// Definir arreglos;
 	Dimension Especialidades[24];
