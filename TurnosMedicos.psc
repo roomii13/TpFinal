@@ -1,9 +1,5 @@
 Algoritmo TurnosMedicos
 	
-	Definir HORARIO_INICIO Como Entero;
-	Definir HORARIO_FIN Como Entero;
-	Definir MINUTOS_POR_TURNO Como Entero;
-	Definir DIAS_DE_LA_SEMANA Como Entero;
 	Definir num, num2,num3 Como Entero;
 	// Definir constantes;
 	HORARIO_INICIO<- 9;
@@ -14,86 +10,86 @@ Algoritmo TurnosMedicos
 	// Definir arreglos;
 	Dimension Especialidades[24];
 	Dimension DoctoresDisponibles[24, 2];
-	Dimension Turnos[5, 17];//  5 días, 17 horarios(de 9 am a 17 pm)
+	Dimension Turnos[5, 17];//  5 dÃ­as, 17 horarios(de 9 am a 17 pm)
 	// Inicializar arreglos de especialidades;
-	Especialidades[1] <- "Clínica Médica";
-	Especialidades[2] <- "Cirugía General";
-	Especialidades[3] <- "Pediatría";
-	Especialidades[4] <- "Obstetricia y Ginecología";
-	Especialidades[5] <- "Cardiología";
-	Especialidades[6] <- "Dermatología";
-	Especialidades[7] <- "Neurología";
-	Especialidades[8] <- "Psiquiatría";
-	Especialidades[9] <- "Oftalmología";
-	Especialidades[10] <- "Otorrinolaringología";
-	Especialidades[11] <- "Urología";
-	Especialidades[12] <- "Traumatología y Ortopedia";
-	Especialidades[13] <- "Gastroenterología";
-	Especialidades[14] <- "Endocrinología";
+	Especialidades[1] <- "ClÃ­nica MÃ©dica";
+	Especialidades[2] <- "CirugÃ­a General";
+	Especialidades[3] <- "PediatrÃ­a";
+	Especialidades[4] <- "Obstetricia y GinecologÃ­a";
+	Especialidades[5] <- "CardiologÃ­a";
+	Especialidades[6] <- "DermatologÃ­a";
+	Especialidades[7] <- "NeurologÃ­a";
+	Especialidades[8] <- "PsiquiatrÃ­a";
+	Especialidades[9] <- "OftalmologÃ­a";
+	Especialidades[10] <- "OtorrinolaringologÃ­a";
+	Especialidades[11] <- "UrologÃ­a";
+	Especialidades[12] <- "TraumatologÃ­a y Ortopedia";
+	Especialidades[13] <- "GastroenterologÃ­a";
+	Especialidades[14] <- "EndocrinologÃ­a";
 	Especialidades[15] <- "Medicina Interna";
-	Especialidades[16] <- "Neumonología";
-	Especialidades[17] <- "Hematología";
-	Especialidades[18] <- "Infectología";
-	Especialidades[19] <- "Radiología";
-	Especialidades[20] <- "Oncología";
-	Especialidades[21] <- "Cirugía Plástica y Reconstructiva";
-	Especialidades[22] <- "Cirugía Cardiovascular";
-	Especialidades[23] <- "Cirugía Pediátrica";
-	Especialidades[24] <- "Neurocirugía";
+	Especialidades[16] <- "NeumonologÃ­a";
+	Especialidades[17] <- "HematologÃ­a";
+	Especialidades[18] <- "InfectologÃ­a";
+	Especialidades[19] <- "RadiologÃ­a";
+	Especialidades[20] <- "OncologÃ­a";
+	Especialidades[21] <- "CirugÃ­a PlÃ¡stica y Reconstructiva";
+	Especialidades[22] <- "CirugÃ­a Cardiovascular";
+	Especialidades[23] <- "CirugÃ­a PediÃ¡trica";
+	Especialidades[24] <- "NeurocirugÃ­a";
 	
 	// Inicializar arreglo de doctores disponibles;
 	DoctoresDisponibles[1, 1] <- "Doctor Gomez"
 	DoctoresDisponibles[1, 2] <- "Doctora Manzano"
 	
-	// Asignar apellidos a los doctores disponibles para "Cirugía General"
+	// Asignar apellidos a los doctores disponibles para "CirugÃ­a General"
 	DoctoresDisponibles[2, 1] <- "Doctor Rodriguez"
 	DoctoresDisponibles[2, 2] <- "Doctora Silva"
 	
-	// Asignar apellidos a los doctores disponibles para "Pediatría"
+	// Asignar apellidos a los doctores disponibles para "PediatrÃ­a"
 	DoctoresDisponibles[3, 1] <- "Doctor Lopez"
 	DoctoresDisponibles[3, 2] <- "Doctora Perez"
 	
-	// Asignar apellidos a los doctores disponibles para "Obstetricia y Ginecología"
+	// Asignar apellidos a los doctores disponibles para "Obstetricia y GinecologÃ­a"
 	DoctoresDisponibles[4, 1] <- "Doctor Hernandez"
 	DoctoresDisponibles[4, 2] <- "Doctora Torres"
 	
-	// Asignar apellidos a los doctores disponibles para "Cardiología"
+	// Asignar apellidos a los doctores disponibles para "CardiologÃ­a"
 	DoctoresDisponibles[5, 1] <- "Doctor Fernandez"
 	DoctoresDisponibles[5, 2] <- "Doctora Gonzalez"
 	
-	// Asignar apellidos a los doctores disponibles para "Dermatología"
+	// Asignar apellidos a los doctores disponibles para "DermatologÃ­a"
 	DoctoresDisponibles[6, 1] <- "Doctor Martinez"
 	DoctoresDisponibles[6, 2] <- "Doctora Sanchez"
 	
-	// Asignar apellidos a los doctores disponibles para "Neurología"
+	// Asignar apellidos a los doctores disponibles para "NeurologÃ­a"
 	DoctoresDisponibles[7, 1] <- "Doctor Ramirez"
 	DoctoresDisponibles[7, 2] <- "Doctora Diaz"
 	
-	// Asignar apellidos a los doctores disponibles para "Psiquiatría"
+	// Asignar apellidos a los doctores disponibles para "PsiquiatrÃ­a"
 	DoctoresDisponibles[8, 1] <- "Doctor Torres"
 	DoctoresDisponibles[8, 2] <- "Doctora Santos"
 	
-	// Asignar apellidos a los doctores disponibles para "Oftalmología"
+	// Asignar apellidos a los doctores disponibles para "OftalmologÃ­a"
 	DoctoresDisponibles[9, 1] <- "Doctor Castro"
 	DoctoresDisponibles[9, 2] <- "Doctora Ferrer"
 	
-	// Asignar apellidos a los doctores disponibles para "Otorrinolaringología"
+	// Asignar apellidos a los doctores disponibles para "OtorrinolaringologÃ­a"
 	DoctoresDisponibles[10, 1] <- "Doctor Navarro"
-	DoctoresDisponibles[10, 2] <- "Doctora Pérez"
+	DoctoresDisponibles[10, 2] <- "Doctora PÃ©rez"
 	
-	// Asignar apellidos a los doctores disponibles para "Urología"
+	// Asignar apellidos a los doctores disponibles para "UrologÃ­a"
 	DoctoresDisponibles[11, 1] <- "Doctor Rojas"
 	DoctoresDisponibles[11, 2] <- "Doctora Vargas"
 	
-	// Asignar apellidos a los doctores disponibles para "Traumatología y Ortopedia"
-	DoctoresDisponibles[12, 1] <- "Doctor Hernández"
+	// Asignar apellidos a los doctores disponibles para "TraumatologÃ­a y Ortopedia"
+	DoctoresDisponibles[12, 1] <- "Doctor HernÃ¡ndez"
 	DoctoresDisponibles[12, 2] <- "Doctora Silva"
 	
-	// Asignar apellidos a los doctores disponibles para "Gastroenterología"
-	DoctoresDisponibles[13, 1] <- "Doctor Gutiérrez"
+	// Asignar apellidos a los doctores disponibles para "GastroenterologÃ­a"
+	DoctoresDisponibles[13, 1] <- "Doctor GutiÃ©rrez"
 	DoctoresDisponibles[13, 2] <- "Doctora Cabrera"
 	
-	// Asignar apellidos a los doctores disponibles para "Endocrinología"
+	// Asignar apellidos a los doctores disponibles para "EndocrinologÃ­a"
 	DoctoresDisponibles[14, 1] <- "Doctor Ruiz"
 	DoctoresDisponibles[14, 2] <- "Doctora Alvarez"
 	
@@ -101,39 +97,39 @@ Algoritmo TurnosMedicos
 	DoctoresDisponibles[15, 1] <- "Doctor Ortega"
 	DoctoresDisponibles[15, 2] <- "Doctora Fuentes"
 	
-	// Asignar apellidos a los doctores disponibles para "Neumonología"
+	// Asignar apellidos a los doctores disponibles para "NeumonologÃ­a"
 	DoctoresDisponibles[16, 1] <- "Doctor Luna"
 	DoctoresDisponibles[16, 2] <- "Doctora Flores"
 	
-	// Asignar apellidos a los doctores disponibles para "Hematología"
+	// Asignar apellidos a los doctores disponibles para "HematologÃ­a"
 	DoctoresDisponibles[17, 1] <- "Doctor Mendoza"
 	DoctoresDisponibles[17, 2] <- "Doctora Marti"
 	
-	// Asignar apellidos a los doctores disponibles para "Infectología"
+	// Asignar apellidos a los doctores disponibles para "InfectologÃ­a"
 	DoctoresDisponibles[18, 1] <- "Doctor Fernandez"
 	DoctoresDisponibles[18, 2] <- "Doctora Gonzalez"
 	
-	// Asignar apellidos a los doctores disponibles para "Radiología"
+	// Asignar apellidos a los doctores disponibles para "RadiologÃ­a"
 	DoctoresDisponibles[19, 1] <- "Doctor Martinez"
 	DoctoresDisponibles[19, 2] <- "Doctora Sanchez"
 	
-	// Asignar apellidos a los doctores disponibles para "Oncología"
+	// Asignar apellidos a los doctores disponibles para "OncologÃ­a"
 	DoctoresDisponibles[20, 1] <- "Doctor Ramirez"
 	DoctoresDisponibles[20, 2] <- "Doctora Diaz"
 	
-	// Asignar apellidos a los doctores disponibles para "Cirugía Plástica y Reconstructiva"
+	// Asignar apellidos a los doctores disponibles para "CirugÃ­a PlÃ¡stica y Reconstructiva"
 	DoctoresDisponibles[21, 1] <- "Doctor Torres"
 	DoctoresDisponibles[21, 2] <- "Doctora Santos"
 	
-	// Asignar apellidos a los doctores disponibles para "Cirugía Cardiovascular"
+	// Asignar apellidos a los doctores disponibles para "CirugÃ­a Cardiovascular"
 	DoctoresDisponibles[22, 1] <- "Doctor Castro"
 	DoctoresDisponibles[22, 2] <- "Doctora Ferrer"
 	
-	// Asignar apellidos a los doctores disponibles para "Cirugía Pediátrica"
+	// Asignar apellidos a los doctores disponibles para "CirugÃ­a PediÃ¡trica"
 	DoctoresDisponibles[23, 1] <- "Doctor Navarro"
-	DoctoresDisponibles[23, 2] <- "Doctora Pérez"
+	DoctoresDisponibles[23, 2] <- "Doctora PÃ©rez"
 	
-	// Asignar apellidos a los doctores disponibles para "Neurocirugía"
+	// Asignar apellidos a los doctores disponibles para "NeurocirugÃ­a"
 	DoctoresDisponibles[24, 1] <- "Doctor Rojas"
 	DoctoresDisponibles[24, 2] <- "Doctora Vargas"
 
@@ -150,7 +146,7 @@ Algoritmo TurnosMedicos
 	
 	// Verificar disponibilidad de turno;
 	Si (EspecialidadElegida >= 1 Y EspecialidadElegida <= 24) Entonces
-		Escribir "Seleccione Opción: " 
+		Escribir "Seleccione OpciÃ³n: " 
 		Escribir"1." DoctoresDisponibles[EspecialidadElegida, 1];
 		Escribir "2." DoctoresDisponibles[EspecialidadElegida, 2];
 		Leer num;
@@ -178,7 +174,7 @@ Algoritmo TurnosMedicos
 		Repetir
 			Escribir "***************************************************";
 			Escribir "***************************************************";
-			Escribir "Seleccione una opción:";
+			Escribir "Seleccione una opciÃ³n:";
 			Escribir "1. Reservar un turno";
 			Escribir "2. Cancelar un turno";
 			Escribir "3. Salir";
@@ -189,10 +185,10 @@ Algoritmo TurnosMedicos
 					// Reservar un turno
 					Escribir "***************************************************";
 					Escribir "***************************************************";
-					Escribir "Días disponibles:";
+					Escribir "DÃ­as disponibles:";
 					Escribir "1. Lunes";
 					Escribir "2. Martes";
-					Escribir "3. Miércoles";
+					Escribir "3. MiÃ©rcoles";
 					Escribir "4. Jueves";
 					Escribir "5. Viernes";
 					Leer DiaElegido;
@@ -203,7 +199,7 @@ Algoritmo TurnosMedicos
 					Para hora <- 1 Hasta 17
 						Si Turnos[DiaElegido, hora] = "Libre" Entonces
 							Si hora < 9 Entonces
-								Escribir hora + 8, ":00 pm";//se me trabó la mente y no puedo corregir am-pm.
+								Escribir hora + 8, ":00 pm";//se me trabÃ³ la mente y no puedo corregir am-pm.
 							Sino
 								Escribir hora - 8, ":30 pm";
 							FinSi
@@ -217,14 +213,14 @@ Algoritmo TurnosMedicos
 						Turnos[DiaElegido, HorarioElegido] <- "Ocupado";
 						Escribir "Turno reservado exitosamente.";
 					Sino
-						Escribir "El turno seleccionado ya está ocupado. Por favor, elija otro.";
+						Escribir "El turno seleccionado ya estÃ¡ ocupado. Por favor, elija otro.";
 					FinSi
 				Caso 2:
 					// Cancelar un turno
-					Escribir "Días disponibles:";
+					Escribir "DÃ­as disponibles:";
 					Escribir "1. Lunes";
 					Escribir "2. Martes";
-					Escribir "3. Miércoles";
+					Escribir "3. MiÃ©rcoles";
 					Escribir "4. Jueves";
 					Escribir "5. Viernes";
 					Leer DiaElegido;
@@ -247,12 +243,12 @@ Algoritmo TurnosMedicos
 						Turnos[DiaElegido, HorarioCancelar] <- "Libre";
 						Escribir "Turno cancelado exitosamente.";
 					Sino
-						Escribir "El horario seleccionado no está ocupado.";
+						Escribir "El horario seleccionado no estÃ¡ ocupado.";
 					FinSi
 				Caso 3:
 					Escribir "Saliendo del programa.";
 				De Otro Modo:
-					Escribir "Opción no válida.";
+					Escribir "OpciÃ³n no vÃ¡lida.";
 			FinSegun
 			
 		Hasta Que Opcion = 3
