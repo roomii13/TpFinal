@@ -32,7 +32,11 @@ Hecho (Hecho):
 
 Cargar Especialidades
 
-Cargar Doctores por área de trabajo
+Cargar Doctores por área de trabajo.
+
+Registrar Turno Reservado.
+
+Registrar Turno Cancelado.
 
 Colocamos las tareas en la columna "Por hacer" del tablero Kanban.
 A medida que comenzamos a trabajar en una tarea, la movemos a la columna "En progreso".
