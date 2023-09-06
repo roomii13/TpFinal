@@ -34,6 +34,10 @@ Cargar Especialidades
 
 Cargar Doctores por área de trabajo
 
+Colocamos las tareas en la columna "Por hacer" del tablero Kanban.
+A medida que comenzamos a trabajar en una tarea, la movemos a la columna "En progreso".
+Cuando completamos una tarea, la movemos a la columna "Revisión" para verificarla y resolver cualquier problema.
+Una vez que una tarea haya sido revisada y aprobada, la movemos a la columna "Hecho".
 
 Este enfoque Kanban permite una gestión detallada y efectiva de las tareas en el proyecto de gestión de turnos médicos.
 Además, promueve la transparencia y la adaptación continua a medida que avanzamos en el desarrollo del sistema.
